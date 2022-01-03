@@ -10,9 +10,7 @@ namespace RRdevs\Widgets\Elementor;
 use  Elementor\Widget_Base;
 use  Elementor\Controls_Manager;
 use  Elementor\utils;
-use  Elementor\Scheme_Color;
 use  Elementor\Group_Control_Typography;
-use  Elementor\Scheme_Typography;
 use  Elementor\Group_Control_Box_Shadow;
 use  Elementor\Group_Control_Background;
 use  Elementor\Group_Control_Border;
@@ -377,7 +375,6 @@ class RRdevs_Button extends \Elementor\Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'              => 'rrdevs_button_typo_normal',
-                'scheme'            => Scheme_Typography::TYPOGRAPHY_1,
                 'selector'          => '{{WRAPPER}} .rrdevs-button',
 
             ]
@@ -488,7 +485,6 @@ class RRdevs_Button extends \Elementor\Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'              => 'rrdevs_button_typo_hover',
-                'scheme'            => Scheme_Typography::TYPOGRAPHY_1,
                 'selector'          => '{{WRAPPER}} .rrdevs-button:hover',
 
             ]
@@ -520,10 +516,6 @@ class RRdevs_Button extends \Elementor\Widget_Base {
 			[
 				'label' => __( 'Background', 'rrdevs-addons' ),
 				'type' => Controls_Manager::COLOR,
-				'scheme'            => [
-                    'type'  => Scheme_Color::get_type(),
-                    'value' => Scheme_Color::COLOR_3
-                ],
 				'default' => '#222831',
 				'selectors' => ['
 					{{WRAPPER}} .rrdevs-button-none:hover,

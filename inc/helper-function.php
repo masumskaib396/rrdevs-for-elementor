@@ -42,3 +42,21 @@ if ( ! function_exists( 'rrdevs_get_meta' ) ) {
         return $content;
     }
 }
+
+function rrdevs_layout_content( $post_id ) {
+
+    return Elementor\Plugin::instance()->frontend->get_builder_content( $post_id, true );
+}
+
+function rrdevs_cpt_slug_and_id( $post_type ) {
+    $the_query = new WP_Query( array(
+        'posts_per_page' => -1,
+        'post_type'      => $post_type,
+    ) );
+    $cpt_posts = [];
+    while ( $the_query->have_posts() ): $the_query->the_post();
+        $cpt_posts[get_the_ID()] = get_the_title();
+    endwhile;
+    wp_reset_postdata();
+    return $cpt_posts;
+}

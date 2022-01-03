@@ -57,7 +57,9 @@ final class RRdevs_Extension {
 		//add_action( 'elementor/editor/after_enqueue_styles', array ( $this, 'pawelements_editor_styles' ) );
 		add_action( 'elementor/widgets/widgets_registered', [ $this, 'init_widgets' ] );
 		add_action( 'elementor/elements/categories_registered',[$this,'register_new_category']);
+
 		add_action('elementor/editor/after_enqueue_scripts', [$this, 'rrdevs_editor_scripts_js'], 100);
+
 		add_action( 'wp_enqueue_scripts', array( $this, 'rrdevs_register_frontend_styles' ), 10 );
 		add_action( 'elementor/frontend/before_register_scripts', [ $this, 'rrdevs_register_frontend_scripts' ] );
 
@@ -72,6 +74,24 @@ final class RRdevs_Extension {
 			'rrdevs-addons-style',
 			RRDEVS_ASSETS_PUBLIC .'/css/widget-style.css',
 			null,RRDEVS_VERSION,
+		);
+
+		wp_enqueue_style(
+			'slick',
+			RRDEVS_ASSETS_PUBLIC .'/css/slick.css',
+			null,RRDEVS_VERSION,
+		);
+
+		wp_enqueue_script(
+			'rrdevs-widget',
+			RRDEVS_ASSETS_PUBLIC .'/js/widget.js',
+			['jquery'], RRDEVS_VERSION, true
+		);
+
+		wp_enqueue_script(
+			'slick',
+			RRDEVS_ASSETS_PUBLIC .'/js/slick.js',
+			['jquery'], RRDEVS_VERSION, true
 		);
 
 	}
@@ -162,9 +182,11 @@ final class RRdevs_Extension {
 		* Extensions Include
 		*/
 		require_once( RRDEVS_WIDGET_EXTENSIONS . 'custom-css.php' );
+		// require_once( RRDEVS_WIDGET_EXTENSIONS . 'custom-position.php' );
 
 		//Include Widget files
 		require_once( RRDEVS_WIDGET_DIR . 'Button/widget.php' );
+		require_once( RRDEVS_WIDGET_DIR . 'AdvanceSlider/widget.php' );
 	}
 }
 RRdevs_Extension::instance();
