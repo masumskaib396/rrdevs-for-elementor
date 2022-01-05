@@ -515,95 +515,6 @@ class RRdevs_Slider extends \Elementor\Widget_Base {
         );
         $this->start_popover();
 
-        /*
-        Arrow Position
-        */
-        //     $start = is_rtl() ? __( 'Right', 'elementor' ) : __( 'Left', 'elementor' );
-        //     $end = ! is_rtl() ? __( 'Right', 'elementor' ) : __( 'Left', 'elementor' );
-
-        //     /* tobol */
-        //     $this->add_control(
-        //         'offset_orientation_v',
-        //         [
-        //             'label' => __( 'Vertical Orientation', 'elementor' ),
-        //             'type' => Controls_Manager::CHOOSE,
-        //             'toggle' => false,
-        //             'default' => 'start',
-        //             'options' => [
-        //                 'top' => [
-        //                     'title' => __( 'Top', 'elementor' ),
-        //                     'icon' => 'eicon-v-align-top',
-        //                 ],
-        //                 'bottom' => [
-        //                     'title' => __( 'Bottom', 'elementor' ),
-        //                     'icon' => 'eicon-v-align-bottom',
-        //                 ],
-        //             ],
-        //             'render_type' => 'ui',
-        //             'selectors' => [
-        //                 '{{WRAPPER}} .hero-slider-arrow' => '{{VALUE}}: 0;',
-        //             ],
-
-        //         ]
-        //     );
-
-        //     $this->add_responsive_control(
-        //     'arrow_position_top',
-        //     [
-        //         'label' => __('Vertical', 'rrdevs-addons'),
-        //         'type' => \Elementor\Controls_Manager::SLIDER,
-        //         'size_units' => ['%','px'],
-        //         'condition' => [
-        //             'arrow_position_toggle' => 'yes'
-        //         ],
-        //         'range' => [
-        //             'px' => [
-        //                 'min' => -1000,
-        //                 'max' => 1000,
-        //             ],
-        //             '%' => [
-        //                 'min' => -100,
-        //                 'max' => 100,
-        //             ],
-        //         ],
-        //         'selectors' => [
-        //             '{{WRAPPER}} .hero-slider-arrow' => 'top: {{SIZE}}{{UNIT}} !important; bottom:auto',
-        //         ],
-        //         'condition' => [
-        //             'offset_orientation_v' => 'top',
-        //         ],
-        //     ]
-        // );
-
-
-        // $this->add_responsive_control(
-        // 'arrow_position_bottom',
-        // [
-        //     'label' => __('Vertical', 'rrdevs-addons'),
-        //     'type' => \Elementor\Controls_Manager::SLIDER,
-        //     'size_units' => ['%','px'],
-        //     'condition' => [
-        //         'arrow_position_toggle' => 'yes'
-        //     ],
-        //     'range' => [
-        //         'px' => [
-        //             'min' => -1000,
-        //             'max' => 1000,
-        //         ],
-        //         '%' => [
-        //             'min' => -100,
-        //             'max' => 100,
-        //         ],
-        //     ],
-        //     'selectors' => [
-        //         '{{WRAPPER}} .hero-slider-arrow' => 'bottom: {{SIZE}}{{UNIT}} !important; top:auto',
-        //     ],
-        //     'condition' => [
-        //         'offset_orientation_v' => 'bottom',
-        //     ],
-        // ]
-        // );
-
 
         $this->add_responsive_control(
             'rrdevs_addons_position_type',
@@ -799,7 +710,7 @@ class RRdevs_Slider extends \Elementor\Widget_Base {
             [
                 'label'             => __( 'Horizontal Position', 'rrdevs-addons' ),
                 'type'              => Controls_Manager::SELECT,
-                'default'           => 'default',
+                'default'           => 'space_between',
                 'options'           => [
                     'default'    =>   __('Default',    'rrdevs-addons'),
                     'space_between'    =>   __('Space Between',    'rrdevs-addons'),
