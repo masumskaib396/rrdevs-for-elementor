@@ -38,7 +38,7 @@ class RRdevs_Button extends \Elementor\Widget_Base {
 
     public function get_keywords()
     {
-        return ['btn', 'button', 'link', 'widgetkit'];
+        return ['btn', 'button', 'link'];
     }
 
 	protected function _register_controls() {

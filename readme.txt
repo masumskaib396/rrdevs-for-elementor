@@ -22,6 +22,7 @@ RRdevs  For Elementor Helper Plugin
 
 == Available Widgets  ==
 * Creative Buttons
+* advanced Slider
 
 
 </p>

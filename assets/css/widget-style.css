@@ -12,6 +12,7 @@ ANIMATED TEXT
 PRICING BOX
 PROGRESS BAR
 SIDEBAR WIDGET
+VIDEO BUTTON
 
 =============================================================--------------------------------------------------------------*/
 
@@ -272,6 +273,306 @@ transform: scaleY(0.8);
 }
 
 /*---------------------------------------------------
+VIDEO BUTTON
+----------------------------------------------------*/
+.rrdevs-modal-button .rrdevs-modal-image-action {
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.top-to-middle {
+  -webkit-transform: translate(-50%, -60%);
+  transform: translate(-50%, -60%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.rrdevs-modal-item.modal-vimeo.bottom-to-middle {
+  -webkit-transform: translate(-50%, -30%);
+  transform: translate(-50%, -30%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.rrdevs-modal-item.active.modal-vimeo.bottom-to-middle {
+  z-index: 9999;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.rrdevs-modal-item.modal-vimeo.right-to-middle {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: translate(-30%, -50%);
+  transform: translate(-30%, -50%);
+}
+
+.rrdevs-modal-item.active.modal-vimeo.right-to-middle {
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.rrdevs-modal-item.modal-vimeo.left-to-middle {
+  -webkit-transform: translate(-70%, -50%);
+  transform: translate(-70%, -50%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.rrdevs-modal-item.active.modal-vimeo.left-to-middle {
+  z-index: 9999;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.rrdevs-modal-item.modal-vimeo.zoom-in {
+  -webkit-transform: translate(-50%, -50%) scale(0.5);
+  transform: translate(-50%, -50%) scale(0.5);
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.rrdevs-modal-item.active.modal-vimeo.zoom-in {
+  z-index: 9999;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.rrdevs-modal-item.modal-vimeo.zoom-out {
+  -webkit-transform: translate(-50%, -50%) scale(1.5);
+  transform: translate(-50%, -50%) scale(1.5);
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.rrdevs-modal-item.active.modal-vimeo.zoom-out {
+  z-index: 9999;
+  display: block;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.rrdevs-modal-item.modal-vimeo.left-rotate {
+  opacity: 0;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  -webkit-transform: translate(-50%, -50%) rotateX(90deg);
+  transform: translate(-50%, -50%) rotateX(90deg);
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+}
+
+.rrdevs-modal-item.active.modal-vimeo.left-rotate {
+  opacity: 1;
+  z-index: 9999;
+  -webkit-transform: translate(-50%, -50%) rotateX(0);
+  transform: translate(-50%, -50%) rotateX(0);
+}
+
+.rrdevs-modal-item.modal-vimeo .rrdevs-modal-content .rrdevs-close-btn {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.rrdevs-modal-item.modal-vimeo .rrdevs-modal-content .rrdevs-close-btn span {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.rrdevs-modal-item.modal-vimeo
+  .rrdevs-modal-content
+  .rrdevs-close-btn
+  span::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  background: #fff;
+  transform: translate(-50%, -50%) rotate(45deg);
+  top: 50%;
+  left: 50%;
+}
+.rrdevs-modal-item.modal-vimeo
+  .rrdevs-modal-content
+  .rrdevs-close-btn
+  span::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 2px;
+  background: #fff;
+  transform: translate(-50%, -50%) rotate(45deg);
+  top: 50%;
+  left: 50%;
+}
+
+.rrdevs-modal-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  display: none;
+}
+
+.rrdevs-modal-overlay.active {
+  opacity: 1;
+  z-index: 1000;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.rrdevs-modal-item.image-gallery .rrdevs-modal-element {
+  display: flex;
+  flex-wrap: wrap;
+}
+.rrdevs-modal-item.image-gallery
+  .rrdevs-modal-element.column-one
+  .rrdevs-modal-element-card {
+  width: 100%;
+}
+.rrdevs-modal-item.image-gallery
+  .rrdevs-modal-element.column-two
+  .rrdevs-modal-element-card {
+  width: 50%;
+}
+.rrdevs-modal-item.image-gallery
+  .rrdevs-modal-element.column-three
+  .rrdevs-modal-element-card {
+  width: 33.33%;
+}
+.rrdevs-modal-item.image-gallery
+  .rrdevs-modal-element.column-four
+  .rrdevs-modal-element-card {
+  width: 25%;
+}
+.rrdevs-modal-item.image-gallery
+  .rrdevs-modal-element.column-five
+  .rrdevs-modal-element-card {
+  width: 20%;
+}
+.rrdevs-modal-item.image-gallery
+  .rrdevs-modal-element.column-six
+  .rrdevs-modal-element-card {
+  width: 16.66%;
+}
+
+.rrdevs-modal-item {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.rrdevs-modal-item.modal-vimeo {
+  opacity: 0;
+  -webkit-transform: translate(-50%, -60%);
+  transform: translate(-50%, -60%);
+  height: auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  visibility: hidden;
+}
+
+@media (max-width: 991px) {
+  .rrdevs-modal-item.modal-vimeo {
+      height: 100%;
+  }
+  .rrdevs-modal-item.modal-vimeo::-webkit-scrollbar {
+      display: none;
+  }
+}
+
+.rrdevs-modal-item.modal-vimeo .rrdevs-modal-content .rrdevs-modal-element img {
+  display: block;
+  width: 100%;
+}
+
+.rrdevs-modal-item.modal-vimeo
+  .rrdevs-modal-content
+  .rrdevs-modal-element
+  .rrdevs-modal-element-card
+  .rrdevs-modal-element-card-body
+  p {
+  margin: 0;
+}
+
+.rrdevs-modal-item.modal-vimeo
+  .rrdevs-modal-content
+  .rrdevs-modal-element
+  .rrdevs-modal-element-card
+  img {
+  display: block;
+  width: 100%;
+}
+
+.rrdevs-modal-item.modal-vimeo .rrdevs-modal-content {
+  position: relative;
+}
+
+.rrdevs-modal-item .rrdevs-modal-content .rrdevs-modal-element iframe {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.rrdevs-modal-item.active.modal-vimeo {
+  opacity: 1;
+  z-index: 2000;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  visibility: visible;
+}
+
+.rrdevs-modal-button.rrdevs-modal-btn-fixed-width-yes
+  .rrdevs-modal-image-action {
+  position: relative;
+}
+.rrdevs-modal-button.rrdevs-modal-btn-fixed-width-yes
+  .rrdevs-modal-image-action
+  span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.rrdevs-modal-wrapper .rrdevs-modal-item.rrdevs-content-overflow-x- {
+  overflow-x: hidden;
+}
+.rrdevs-modal-wrapper .rrdevs-modal-item.rrdevs-content-overflow-y- {
+  overflow-y: scroll;
+}
+
+/*---------------------------------------------------
 CONTACT FORM
 ----------------------------------------------------*/
 .rrdevs--contactform-wraper.absolute {
@@ -394,6 +695,44 @@ ANIMATED TEXT
 	font-size: 30px;
 	font-weight: 600;
 }
+
+.rrdevs-modal-overly-button{
+  position: relative;
+  z-index: 2;
+}
+
+
+.rrdevs-modal-overly-button::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 90px;
+    height: 90px;
+  background-color: #222;
+    border-radius: 50%;
+    animation: pulse-border 1500ms ease-out infinite;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+}
+
+@keyframes pulse-border {
+  0% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+      opacity: 1;
+  }
+  100% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+      opacity: 0;
+  }
+}
+
+
 /*---------------------------------------------------
 /*---------------------------------------------------
 PRICING BOX
