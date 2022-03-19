@@ -11,11 +11,10 @@ CONTACT FORM
 ANIMATED TEXT
 PRICING BOX
 PROGRESS BAR
-SIDEBAR WIDGET
 VIDEO BUTTON
+MODAL POPUP
 
 =============================================================--------------------------------------------------------------*/
-
 /*---------------------------------------------------
 BUTTON
 ----------------------------------------------------*/
@@ -1235,4 +1234,56 @@ font-weight: 600;
   .rrdevs-hero-slider ul.hero-slider-dot-list {
       margin-top: 40px;
   }
+}
+
+
+/*---------------------------------------------------
+MODAL POPUP
+----------------------------------------------------*/
+
+span.popup-menubar {
+  cursor: pointer;
+  display: inline-block;
+  padding: 14px 20px;
+  background-color: #222;
+  color: #fff;
+  border-radius: 3px;
+}
+
+span.popup-menubar i {
+  font-size: 30px;
+}
+
+.rrdevs-addons-popup-content {
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  z-index: 9999999;
+  opacity: 0;
+  visibility: hidden;
+  right: -30%;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  background-color: #FF5E14;
+  -webkit-box-shadow: 0 13px 35px -12px rgb(35 35 35 / 15%);
+  box-shadow: 0 13px 35px -12px rgb(35 35 35 / 15%);
+}
+
+
+.rrdevs-addons-popup-content.show {
+  opacity: 1;
+  visibility: visible;
+  right: 0;
+}
+
+.rrdevs-addons-popup-content #offset-menu-close-btn {
+  position: fixed;
+  right: 30px;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  z-index: 9;
+  top: 40px;
 }

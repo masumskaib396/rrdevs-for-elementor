@@ -7,12 +7,6 @@
     Navigation menu
 
     --------------------------------------------- */
-
-
-
-
-
-
     $(window).load(function() {
 
     })
@@ -72,8 +66,6 @@
     VIDEO BUTTON
     ----------------------------------------------------*/
     var rrdevs_video_button = function ($scope, $) {
-
-        console.log("hello world");
 
         var modalWrapper    = $scope.find( '.rrdevs-modal' ).eq(0),
         modalOverlayWrapper = $scope.find( '.rrdevs-modal-overlay' ),
@@ -140,11 +132,22 @@
         } );
     }
 
+    var modal_popup = function ($scope, $) {
+
+        $('.popup-menubar').on('click', function() {
+           $('.rrdevs-addons-popup-content').addClass('show')
+       })
+
+       $('#offset-menu-close-btn').on('click', function() {            
+             $('.rrdevs-addons-popup-content').removeClass('show')
+        });
+    }
 
     $(window).on("elementor/frontend/init", function() {
 
         elementorFrontend.hooks.addAction("frontend/element_ready/rrdevs_slider.default", rrdevs_hero_slider);
         elementorFrontend.hooks.addAction("frontend/element_ready/rrdevs-modal-popup.default", rrdevs_video_button);
+        elementorFrontend.hooks.addAction("frontend/element_ready/rrdevs-popup.default", modal_popup);
 
 
     });

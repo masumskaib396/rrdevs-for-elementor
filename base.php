@@ -188,6 +188,7 @@ final class RRdevs_Extension {
 		require_once( RRDEVS_WIDGET_DIR . 'Button/widget.php' );
 		require_once( RRDEVS_WIDGET_DIR . 'AdvanceSlider/widget.php' );
 		require_once( RRDEVS_WIDGET_DIR . 'VideoButton/widget.php' );
+		require_once( RRDEVS_WIDGET_DIR . 'Popup/widget.php' );
 	}
 }
 RRdevs_Extension::instance();
