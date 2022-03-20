@@ -1,5 +1,5 @@
 === RRdevs ===
-Contributors: rrdevs
+Contributors: rrdevs, rubelmah55
 Donate link: https://profiles.wordpress.org/rrdevs/
 Tags: Elementor, Elementor Addons, Elementor Free Custom Css, rrdevs
 Requires at least: 5.0
@@ -23,6 +23,8 @@ RRdevs  For Elementor Helper Plugin
 == Available Widgets  ==
 * Creative Buttons
 * advanced Slider
+* Modal Popup
+* Advance Video Button
 
 
 </p>

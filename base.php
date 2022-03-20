@@ -182,13 +182,16 @@ final class RRdevs_Extension {
 		* Extensions Include
 		*/
 		require_once( RRDEVS_WIDGET_EXTENSIONS . 'custom-css.php' );
-		// require_once( RRDEVS_WIDGET_EXTENSIONS . 'custom-position.php' );
+		require_once( RRDEVS_WIDGET_EXTENSIONS . 'custom-position.php' );
 
+		
 		//Include Widget files
 		require_once( RRDEVS_WIDGET_DIR . 'Button/widget.php' );
 		require_once( RRDEVS_WIDGET_DIR . 'AdvanceSlider/widget.php' );
 		require_once( RRDEVS_WIDGET_DIR . 'VideoButton/widget.php' );
 		require_once( RRDEVS_WIDGET_DIR . 'Popup/widget.php' );
+		require_once( RRDEVS_WIDGET_DIR . 'IconBox/widget.php' );
+		require_once( RRDEVS_WIDGET_DIR . 'Breadcrumb/widget.php' );
 	}
 }
 RRdevs_Extension::instance();
