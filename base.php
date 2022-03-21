@@ -208,6 +208,8 @@ final class RRdevs_Extension {
 		require_once( RRDEVS_WIDGET_DIR . 'Breadcrumb/widget.php' );
 		require_once( RRDEVS_WIDGET_DIR . 'AniamteText/widget.php' );
 		require_once( RRDEVS_WIDGET_DIR . 'ContactForm7/widget.php' );
+		require_once( RRDEVS_WIDGET_DIR . 'Excerpt/widget.php' );
+		require_once( RRDEVS_WIDGET_DIR . 'Heading/widget.php' );
 	}
 }
 RRdevs_Extension::instance();

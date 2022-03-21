@@ -7,7 +7,7 @@ Tested up to: 5.8.1
 Requires PHP: 5.6
 License: GPl V2
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
-Stable tag: 1.0.1
+Stable tag: 1.0.3
 
 
 == Description ==
@@ -42,5 +42,14 @@ Installation is fairly straight forward. Install it from the WordPress plugin re
 = 1.0.0 =
 * Initial Release
 
-= 1.0.1 =
-* Advance Video Button
+= 1.0.2 =
+* Icon Box
+* Breadcrumb
+* Aniamte Text
+* Contact Form 7
+
+
+= 1.0.3 =
+Heading
+Excerpt
+

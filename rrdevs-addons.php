@@ -4,7 +4,7 @@ Plugin Name: RRdevs For Elementor
 Plugin URI: https://github.com/masumskaib396/rrdevs-for-elementor
 Description: The RRdevs is an Elementor helping plugin that will make your designing work easier.
 Our specialities are custom CSS, Nested section, Creative Buttons.
-Version: 1.0.0
+Version: 1.0.3
 Author: rrdevs
 Author URI: https://profiles.wordpress.org/rrdevs
 License: GPLv2 or later
@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 //Set plugin version constant.
-define( 'RRDEVS_VERSION', '1.0.0');
+define( 'RRDEVS_VERSION', '1.0.3');
 
 /* Set constant path to the plugin directory. */
 define( 'RRDEVS_WIDGET', trailingslashit( plugin_dir_path( __FILE__ ) ) );
