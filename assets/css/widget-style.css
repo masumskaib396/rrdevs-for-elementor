@@ -586,9 +586,141 @@ CONTACT FORM
   right: 0;
 }
 
-/*---------------------------------------------------
-DUAL HEADING
-----------------------------------------------------*/
+
+--------------------------------------------------------------*/
+.rrdevs-addons-contact-from input[type="text"],
+.rrdevs-addons-contact-from input[type="email"],
+.rrdevs-addons-contact-from input[type="url"],
+.rrdevs-addons-contact-from input[type="tel"],
+.rrdevs-addons-contact-from input[type="date"],
+.rrdevs-addons-contact-from input[type="number"],
+.rrdevs-addons-contact-from textarea {
+    background: #fff;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    float: none;
+    height: auto;
+    margin: 0;
+    outline: 0;
+}
+textarea {
+    width: 100%;
+    max-height: 140px;
+}
+.wpcf7-form-control-wrap {
+    display: block;
+    position: relative;
+}
+
+.rrdevs-addons-contact-from input:not([type=checkbox]) {
+    height: 70px;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 100%;
+}
+form.wpcf7-form input {
+    width: 100%;
+}
+.rrdevs-addons-contact-from input[type=submit], .rrdevs-addons-contact-from button[type=submit] {
+    background-color: #6A26DA;
+    color: #fff;
+    font-weight: 600;
+    height: 70px;
+    width: 172px;
+    padding: 0px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+.rrdevs-addons-contact-from input[type="submit"],
+.rrdevs-addons-contact-from input[type="button"] {
+    transition: all 0.25s linear 0s;
+}
+.rrdevs-addons-contact-from.placeholder-hide input::-webkit-input-placeholder,
+.rrdevs-addons-contact-from.placeholder-hide textarea::-webkit-input-placeholder {
+    opacity: 0;
+    visibility: hidden;
+}
+.rrdevs-addons-contact-from.placeholder-hide input::-moz-placeholder,
+.rrdevs-addons-contact-from.placeholder-hide textarea::-moz-placeholder {
+    opacity: 0;
+    visibility: hidden;
+}
+.rrdevs-addons-contact-from.placeholder-hide input:-ms-input-placeholder,
+.rrdevs-addons-contact-from.placeholder-hide textarea:-ms-input-placeholder {
+    opacity: 0;
+    visibility: hidden;
+}
+.rrdevs-addons-contact-from.placeholder-hide input:-moz-placeholder,
+.rrdevs-addons-contact-from.placeholder-hide textarea:-moz-placeholder {
+    opacity: 0;
+    visibility: hidden;
+}
+.rrdevs-custom-radio-checkbox input[type="checkbox"],
+.rrdevs-custom-radio-checkbox input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-style: solid;
+    border-width: 0;
+    outline: none;
+    min-width: 1px;
+    width: 15px;
+    height: 15px;
+    background: #ddd;
+    padding: 3px;
+}
+.rrdevs-custom-radio-checkbox input[type="checkbox"]:before,
+.rrdevs-custom-radio-checkbox input[type="radio"]:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+.rrdevs-custom-radio-checkbox input[type="checkbox"]:checked:before,
+.rrdevs-custom-radio-checkbox input[type="radio"]:checked:before {
+    background: #999;
+    transition: all 0.25s linear 0s;
+}
+.rrdevs-custom-radio-checkbox input[type="radio"] {
+    border-radius: 50%;
+}
+.rrdevs-custom-radio-checkbox input[type="radio"]:before {
+    border-radius: 50%;
+}
+.rrdevs-addons--contactform-wraper .form-content-area h2 {
+    margin: 0px;
+    font-family: 'Prosto One';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 35px;
+    text-align: center;
+    color: #12141D;
+    margin-bottom: 15px;
+}
+.rrdevs-addons--contactform-wraper .form-content-area p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(18, 20, 29, 0.7);
+}
+.rrdevs-addons--contactform-wraper .form-content-area {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 50px;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .rrdevs-addons--contactform-wraper .form-content-area {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-bottom: 40px;
+    }
+}
+
 /*---------------------------------------------------
 DUAL HEADDING
 ----------------------------------------------------*/

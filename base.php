@@ -77,9 +77,23 @@ final class RRdevs_Extension {
 		);
 
 		wp_enqueue_style(
+			'animate',
+			RRDEVS_ASSETS_PUBLIC .'/css/animate.css',
+			null,RRDEVS_VERSION
+		);
+
+		wp_enqueue_style(
 			'slick',
 			RRDEVS_ASSETS_PUBLIC .'/css/slick.css',
 			null,RRDEVS_VERSION,
+		);
+
+		wp_enqueue_script(
+			'typed',
+			RRDEVS_ASSETS_PUBLIC . '/js/typed.min.js',
+			['jquery'],
+			RRDEVS_VERSION,
+			true
 		);
 
 		wp_enqueue_script(
@@ -184,7 +198,7 @@ final class RRdevs_Extension {
 		require_once( RRDEVS_WIDGET_EXTENSIONS . 'custom-css.php' );
 		require_once( RRDEVS_WIDGET_EXTENSIONS . 'custom-position.php' );
 
-		
+
 		//Include Widget files
 		require_once( RRDEVS_WIDGET_DIR . 'Button/widget.php' );
 		require_once( RRDEVS_WIDGET_DIR . 'AdvanceSlider/widget.php' );
@@ -192,6 +206,8 @@ final class RRdevs_Extension {
 		require_once( RRDEVS_WIDGET_DIR . 'Popup/widget.php' );
 		require_once( RRDEVS_WIDGET_DIR . 'IconBox/widget.php' );
 		require_once( RRDEVS_WIDGET_DIR . 'Breadcrumb/widget.php' );
+		require_once( RRDEVS_WIDGET_DIR . 'AniamteText/widget.php' );
+		require_once( RRDEVS_WIDGET_DIR . 'ContactForm7/widget.php' );
 	}
 }
 RRdevs_Extension::instance();

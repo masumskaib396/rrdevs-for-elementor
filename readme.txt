@@ -1,4 +1,4 @@
-=== RRdevs ===
+=== RRaddons for Elementor ===
 Contributors: rrdevs, rubelmah55
 Donate link: https://profiles.wordpress.org/rrdevs/
 Tags: Elementor, Elementor Addons, Elementor Free Custom Css, rrdevs
@@ -14,7 +14,7 @@ Stable tag: 1.0.1
 
 <p>
 
-RRdevs  For Elementor Helper Plugin
+RRaddons for Elementor  For Elementor Helper Plugin
 
 == Feature ==
 * Custom CSS
@@ -25,6 +25,10 @@ RRdevs  For Elementor Helper Plugin
 * advanced Slider
 * Modal Popup
 * Advance Video Button
+* Icon Box
+* Breadcrumb
+* Aniamte Text
+* Contact Form 7
 
 
 </p>
