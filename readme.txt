@@ -22,13 +22,17 @@ RRaddons for Elementor  For Elementor Helper Plugin
 
 == Available Widgets  ==
 * Creative Buttons
-* advanced Slider
+* Advanced Slider
 * Modal Popup
-* Advance Video Button
+* Advanced Video Button
 * Icon Box
 * Breadcrumb
 * Aniamte Text
 * Contact Form 7
+* PricingBox
+* Excerpt
+* Heading
+* Advanced Tab
 
 
 </p>
@@ -41,6 +45,8 @@ Installation is fairly straight forward. Install it from the WordPress plugin re
 
 = 1.0.0 =
 * Initial Release
+* Creative Buttons
+* Advanced Slider
 
 = 1.0.2 =
 * Icon Box
@@ -52,4 +58,10 @@ Installation is fairly straight forward. Install it from the WordPress plugin re
 = 1.0.3 =
 Heading
 Excerpt
+
+= 1.0.4 =
+* PricingBox
+* Advanced Tab
+* Advanced Video Button
+* Modal Popup
 
