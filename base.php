@@ -75,6 +75,11 @@ final class RRdevs_Extension {
 			RRDEVS_ASSETS_PUBLIC .'/css/widget-style.css',
 			null,RRDEVS_VERSION,
 		);
+		wp_enqueue_style(
+			'rrdevs-addons-extra',
+			RRDEVS_ASSETS_PUBLIC .'/css/extra.css',
+			null,RRDEVS_VERSION,
+		);
 
 		wp_enqueue_style(
 			'animate',
@@ -197,6 +202,7 @@ final class RRdevs_Extension {
 		*/
 		require_once( RRDEVS_WIDGET_EXTENSIONS . 'custom-css.php' );
 		require_once( RRDEVS_WIDGET_EXTENSIONS . 'custom-position.php' );
+		require_once( RRDEVS_WIDGET_EXTENSIONS . 'css-transform.php' );
 
 
 		//Include Widget files
@@ -210,6 +216,8 @@ final class RRdevs_Extension {
 		require_once( RRDEVS_WIDGET_DIR . 'ContactForm7/widget.php' );
 		require_once( RRDEVS_WIDGET_DIR . 'Excerpt/widget.php' );
 		require_once( RRDEVS_WIDGET_DIR . 'Heading/widget.php' );
+		require_once( RRDEVS_WIDGET_DIR . 'Tab/widget.php' );
+		require_once( RRDEVS_WIDGET_DIR . 'PricingBox/widget.php' );
 	}
 }
 RRdevs_Extension::instance();

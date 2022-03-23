@@ -15,6 +15,7 @@ PROGRESS BAR
 VIDEO BUTTON
 MODAL POPUP
 ICON BOX
+TAB
 
 =============================================================--------------------------------------------------------------*/
 
@@ -950,6 +951,7 @@ PRICING BOX
 }
 
 /* Pricing List End */
+
 /* Pricing Table Start */
 
 .left{
@@ -1546,4 +1548,139 @@ span.rrdevs-addons-feature-icon.icon-type-image img {
     line-height: 40px;
     border-radius: 50%;
     border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+/*---------------------------------------------------
+TAB
+----------------------------------------------------*/
+
+.rrdevs-addons-tab-content-single {
+  display: none;
+}
+
+.rrdevs-addons-tab-content-single.current {
+  display: block;
+  position: relative;
+}
+
+.rrdevs-addons--tab-menu ul.tabs {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 856px;
+  border-bottom: 2px solid rgb(0 28 128 / 20%);
+  flex-wrap: wrap;
+}
+
+.rrdevs-addons--tab-menu ul.tabs>li {
+  display: inline-flex;
+  font-style: normal;
+  font-weight: 1.3;
+  font-size: 20px;
+  color: #2B59FF;
+  position: relative;
+  padding: 20px 0;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.rrdevs-addons--tab-menu ul.tabs>li .rrdevs-addons-tab-icon {
+  margin-right: 8px;
+  font-size: 18px;
+  width: 18px;
+}
+
+.rrdevs-addons--tab-menu {
+  text-align: center;
+}
+
+.rrdevs-addons--tab-menu ul.tabs>li.current {
+  border-color: #FD4C5C;
+  color: #FD4C5C;
+}
+
+.rrdevs-addons-elm-edit-popup .mfp-content {
+  max-width: 80vw;
+  max-height: 80vh;
+}
+
+.rrdevs-addons-elm-edit-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border: 1px solid #ffa500d9;
+  transition: .3s;
+}
+
+a.rrdevs-addons-elm-edit {
+  transform: translatey(-100%);
+  background: #ffa500d9;
+  color: #fff;
+  padding: 0 13px;
+}
+
+/*---------------------------------------------------
+CSS TRANSFORM
+----------------------------------------------------*/
+.rrdevs-css-transform-yes {
+  -webkit-transition-duration: var(--rrdevs-tfx-transition-duration, 0.2s);
+  transition-duration: var(--rrdevs-tfx-transition-duration, 0.2s);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transform: translate(
+      var(--rrdevs-tfx-translate-x, 0),
+      var(--rrdevs-tfx-translate-y, 0)
+    )
+    scale(var(--rrdevs-tfx-scale-x, 1), var(--rrdevs-tfx-scale-y, 1))
+    skew(var(--rrdevs-tfx-skew-x, 0), var(--rrdevs-tfx-skew-y, 0))
+    rotateX(var(--rrdevs-tfx-rotate-x, 0)) rotateY(var(--rrdevs-tfx-rotate-y, 0))
+    rotateZ(var(--rrdevs-tfx-rotate-z, 0));
+  transform: translate(
+      var(--rrdevs-tfx-translate-x, 0),
+      var(--rrdevs-tfx-translate-y, 0)
+    )
+    scale(var(--rrdevs-tfx-scale-x, 1), var(--rrdevs-tfx-scale-y, 1))
+    skew(var(--rrdevs-tfx-skew-x, 0), var(--rrdevs-tfx-skew-y, 0))
+    rotateX(var(--rrdevs-tfx-rotate-x, 0)) rotateY(var(--rrdevs-tfx-rotate-y, 0))
+    rotateZ(var(--rrdevs-tfx-rotate-z, 0));
+}
+.rrdevs-css-transform-yes:hover {
+  -webkit-transform: translate(
+      var(--rrdevs-tfx-translate-x-hover, var(--rrdevs-tfx-translate-x, 0)),
+      var(--rrdevs-tfx-translate-y-hover, var(--rrdevs-tfx-translate-y, 0))
+    )
+    scale(
+      var(--rrdevs-tfx-scale-x-hover, var(--rrdevs-tfx-scale-x, 1)),
+      var(--rrdevs-tfx-scale-y-hover, var(--rrdevs-tfx-scale-y, 1))
+    )
+    skew(
+      var(--rrdevs-tfx-skew-x-hover, var(--rrdevs-tfx-skew-x, 0)),
+      var(--rrdevs-tfx-skew-y-hover, var(--rrdevs-tfx-skew-y, 0))
+    )
+    rotateX(var(--rrdevs-tfx-rotate-x-hover, var(--rrdevs-tfx-rotate-x, 0)))
+    rotateY(var(--rrdevs-tfx-rotate-y-hover, var(--rrdevs-tfx-rotate-y, 0)))
+    rotateZ(var(--rrdevs-tfx-rotate-z-hover, var(--rrdevs-tfx-rotate-z, 0)));
+  transform: translate(
+      var(--rrdevs-tfx-translate-x-hover, var(--rrdevs-tfx-translate-x, 0)),
+      var(--rrdevs-tfx-translate-y-hover, var(--rrdevs-tfx-translate-y, 0))
+    )
+    scale(
+      var(--rrdevs-tfx-scale-x-hover, var(--rrdevs-tfx-scale-x, 1)),
+      var(--rrdevs-tfx-scale-y-hover, var(--rrdevs-tfx-scale-y, 1))
+    )
+    skew(
+      var(--rrdevs-tfx-skew-x-hover, var(--rrdevs-tfx-skew-x, 0)),
+      var(--rrdevs-tfx-skew-y-hover, var(--rrdevs-tfx-skew-y, 0))
+    )
+    rotateX(var(--rrdevs-tfx-rotate-x-hover, var(--rrdevs-tfx-rotate-x, 0)))
+    rotateY(var(--rrdevs-tfx-rotate-y-hover, var(--rrdevs-tfx-rotate-y, 0)))
+    rotateZ(var(--rrdevs-tfx-rotate-z-hover, var(--rrdevs-tfx-rotate-z, 0)));
 }

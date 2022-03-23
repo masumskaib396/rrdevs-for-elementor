@@ -185,12 +185,38 @@
         }
     }
 
+
+    var RRdevs_Addons_Tab = function($scope, $) {
+        $scope.find('ul.tabs li').on('click', function() {
+            var tab_id = $(this).attr('data-tab');
+            $scope.find('ul.tabs li').removeClass('current');
+            $scope.find('.rrdevs-addons-tab-content-single').removeClass('current');
+            $(this).addClass('current');
+            $scope.find("#" + tab_id).addClass('current');
+        })
+        if ($.fn.magnificPopup) {
+            $('.rrdevs-addons-elm-edit').magnificPopup({
+                type: 'iframe',
+                mainClass: 'mfp-fade rrdevs-addons-elm-edit-popup',
+                callbacks: {
+                    open: function() {
+                    },
+                    close: function() {
+                            location.reload();
+
+                        }
+                }
+            });
+        }
+    };
+
     $(window).on("elementor/frontend/init", function() {
 
         elementorFrontend.hooks.addAction("frontend/element_ready/rrdevs_slider.default", rrdevs_hero_slider);
         elementorFrontend.hooks.addAction("frontend/element_ready/rrdevs-modal-popup.default", rrdevs_video_button);
         elementorFrontend.hooks.addAction("frontend/element_ready/rrdevs-popup.default", modal_popup);
         elementorFrontend.hooks.addAction("frontend/element_ready/rrdevs-animated.default", rrdevs_AnimatedText);
+        elementorFrontend.hooks.addAction("frontend/element_ready/rrdevs-addons-tab.default", RRdevs_Addons_Tab);
 
 
     });

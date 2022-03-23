@@ -37,6 +37,7 @@ define( 'RRDEVS_ASSETS_VERDOR', plugins_url( 'assets/vendor', __FILE__ ) );
 
 
 require_once( RRDEVS_WIDGET_INC . 'helper-function.php');
+require_once( RRDEVS_WIDGET_INC . 'elmentor-extender.php');
 require_once( RRDEVS_WIDGET_INC . 'Classes/breadcrumb-class.php');
 require_once( RRDEVS_WIDGET . 'base.php' );
 
