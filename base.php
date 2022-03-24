@@ -112,6 +112,16 @@ final class RRdevs_Extension {
 			RRDEVS_ASSETS_PUBLIC .'/js/slick.js',
 			['jquery'], RRDEVS_VERSION, true
 		);
+		wp_enqueue_script(
+			'waypoints',
+			RRDEVS_ASSETS_PUBLIC .'/js/jquery.waypoints.min.js',
+			['jquery'], RRDEVS_VERSION, true
+		);
+		wp_enqueue_script(
+			'rrdevs-progress-bar',
+			RRDEVS_ASSETS_PUBLIC .'/js/rrdevs-progress-bar-vendor.min.js',
+			['jquery'], RRDEVS_VERSION, true
+		);
 
 	}
 
@@ -218,6 +228,8 @@ final class RRdevs_Extension {
 		require_once( RRDEVS_WIDGET_DIR . 'Heading/widget.php' );
 		require_once( RRDEVS_WIDGET_DIR . 'Tab/widget.php' );
 		require_once( RRDEVS_WIDGET_DIR . 'PricingBox/widget.php' );
+		require_once( RRDEVS_WIDGET_DIR . 'Accordion/widget.php' );
+		require_once( RRDEVS_WIDGET_DIR . 'ProgressBar/widget.php' );
 	}
 }
 RRdevs_Extension::instance();

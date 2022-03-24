@@ -13,7 +13,7 @@ use  Elementor\utils;
 use  Elementor\Group_Control_Typography;
 use  Elementor\Group_Control_Box_Shadow;
 use  Elementor\Group_Control_Background;
-use  Elementor\Group_Control_Border;
+use  Elementor\Group_Control_Border;   
 use  Elementor\Repeater;
 use  Elementor\Icons_Manager;
 
@@ -504,36 +504,37 @@ class RRdevs_Slider extends \Elementor\Widget_Base {
         );
 
         $this->add_control(
-            'arrow_position_toggle',
+            'popover-toggle',
             [
-                'label' => __('Position', 'rrdevs-addons'),
-                'type' => \Elementor\Controls_Manager::POPOVER_TOGGLE,
-                'label_off' => __('None', 'rrdevs-addons'),
-                'label_on' => __('Custom', 'rrdevs-addons'),
+                'label'        => __( 'Field advanced option', 'rrdevs-addons' ),
+                'type'         => Controls_Manager::POPOVER_TOGGLE,
+                'label_off'    => __( 'Default', 'rrdevs-addons' ),
+                'label_on'     => __( 'Custom', 'rrdevs-addons' ),
                 'return_value' => 'yes',
             ]
         );
-        $this->start_popover();
-
+      $this->start_popover();
 
         $this->add_responsive_control(
             'rrdevs_addons_position_type',
-            array(
+            [
                 'label' => __('Position Type', 'rr-addons'),
                 'label_block' => true,
                 'type' => Controls_Manager::SELECT,
-                'options' => array(
+                'options' => [
                     '' => __('Default', 'rr-addons'),
                     'static' => __('Static', 'rr-addons'),
                     'relative' => __('Relative', 'rr-addons'),
                     'absolute' => __('Absolute', 'rr-addons'),
-                ),
+                ],
                 'default' => '',
-                'selectors' => array(
+                'selectors' => [
                     '{{WRAPPER}} .hero-slider-arrow' => 'position:{{VALUE}};',
-                ),
-            )
+                ],
+            ]
         );
+
+        
         $this->add_responsive_control(
             'rrdevs_addons_position_top',
             array(
@@ -825,7 +826,7 @@ class RRdevs_Slider extends \Elementor\Widget_Base {
             ]
         );
 
-        $this->end_popover();
+    $this->end_popover();
 
         $this->add_responsive_control(
             'arrow_icon_size',

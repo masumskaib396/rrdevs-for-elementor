@@ -1166,7 +1166,110 @@ PRICING BOX
 .rrdevs-pricing-table-price-subtitle{
   display: block;
 }
+ /*---------------------------------------------------
+  ACCORDION
+  ----------------------------------------------------*/
 
+  .rrdevs-accordion-items .rrdevs-accordion-single-item .rrdevs-accordion-title {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+}
+
+.rrdevs-accordion-items .rrdevs-accordion-single-item .rrdevs-accordion-title h3 {
+    width: 100%;
+    font-size: 15px;
+}
+
+.rrdevs-accordion-single-item h3 {
+    font-weight: 600;
+}
+
+.rrdevs-accordion-items .rrdevs-accordion-single-item .rrdevs-accordion-title:hover {
+    cursor: pointer;
+}
+
+.rrdevs-accordion-items .rrdevs-accordion-single-item .rrdevs-accordion-title .rrdevs-active-inactive-icon {
+    position: relative;
+    margin-left: 15px;
+}
+
+.rrdevs-accordion-items .rrdevs-accordion-single-item .rrdevs-accordion-title span.rrdevs-tab-title-icon {
+    position: relative;
+}
+
+.rrdevs-accordion-items .rrdevs-accordion-single-item .rrdevs-accordion-title .rrdevs-active-icon i,
+.rrdevs-accordion-items .rrdevs-accordion-single-item .rrdevs-accordion-title .rrdevs-inactive-icon i,
+.rrdevs-accordion-items .rrdevs-accordion-single-item .rrdevs-accordion-title span.rrdevs-tab-title-icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+.rrdevs-accordion-items .rrdevs-accordion-single-item .rrdevs-accordion-title .rrdevs-active-icon svg,
+.rrdevs-accordion-items .rrdevs-accordion-single-item .rrdevs-accordion-title .rrdevs-inactive-icon svg,
+.rrdevs-accordion-items .rrdevs-accordion-single-item .rrdevs-accordion-title span.rrdevs-tab-title-icon svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+.rrdevs-accordion-items .rrdevs-accordion-single-item .rrdevs-accordion-title.active .rrdevs-inactive-icon,
+.rrdevs-accordion-items .rrdevs-accordion-single-item .rrdevs-accordion-title .rrdevs-active-icon {
+    display: none;
+}
+
+.rrdevs-accordion-items .rrdevs-accordion-single-item .rrdevs-accordion-title.active .rrdevs-active-icon {
+    display: block;
+}
+
+.rrdevs-accordion-items .rrdevs-accordion-single-item .rrdevs-accordion-content {
+    display: none;
+}
+
+.rrdevs-accordion-items .rrdevs-accordion-single-item .rrdevs-accordion-title .rrdevs-active-inactive-icon {
+    width: 70px;
+    margin-left: auto;
+}
+
+.rrdevs-accordion-items .rrdevs-accordion-single-item .rrdevs-accordion-content .rrdevs-accordion-content-wrapper {
+    display: flex;
+}
+
+.rrdevs-accordion-items .rrdevs-accordion-single-item .rrdevs-accordion-content .rrdevs-accordion-content-wrapper.has-image-yes .rrdevs-accordion-text {
+    width: 60%;
+}
+
+.rrdevs-accordion-items .rrdevs-accordion-single-item .rrdevs-accordion-content .rrdevs-accordion-content-wrapper.has-image-yes .rrdevs-accordion-image {
+    width: 40%;
+}
+
+.rrdevs-accordion-items .rrdevs-accordion-single-item .rrdevs-accordion-content .rrdevs-accordion-content-wrapper.has-image-yes.image-position-left .rrdevs-accordion-text {
+    order: 2;
+}
+
+.rrdevs-accordion-items .rrdevs-accordion-single-item .rrdevs-accordion-content .rrdevs-accordion-content-wrapper.has-image-yes.image-position-left .rrdevs-accordion-image {
+    order: 1;
+}
+
+.rrdevs-accordion-items .rrdevs-accordion-single-item .rrdevs-accordion-content .rrdevs-accordion-content-wrapper .rrdevs-accordion-button a {
+    display: inline-block;
+}
+
+@media only screen and (max-width: 767px) {
+    .rrdevs-accordion-items .rrdevs-accordion-single-item .rrdevs-accordion-content .rrdevs-accordion-content-wrapper {
+        flex-direction: column;
+    }
+    .rrdevs-accordion-items .rrdevs-accordion-single-item .rrdevs-accordion-content .rrdevs-accordion-content-wrapper.has-image-yes .rrdevs-accordion-text,
+    .rrdevs-accordion-items .rrdevs-accordion-single-item .rrdevs-accordion-content .rrdevs-accordion-content-wrapper.has-image-yes .rrdevs-accordion-image {
+        width: 100%;
+    }
+}
 /*---------------------------------------------------
 PROGRESS BAR
 ----------------------------------------------------*/
