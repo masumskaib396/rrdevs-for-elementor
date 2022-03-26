@@ -23,7 +23,7 @@ class RRdevs_Icon_Box extends Widget_Base {
 	public function get_keywords() {
 		return [ 'info', 'box', 'icon' ];
 	}
-	protected function _register_controls()
+	protected function register_controls()
 	{
 		/**
 		 * Content tab

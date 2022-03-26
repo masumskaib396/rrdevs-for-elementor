@@ -21,7 +21,7 @@ class RRdevs_Animated_Text extends Widget_Base {
 	public function get_keywords() {
         return [ 'rrdevs-addons', 'fancy', 'heading', 'animate', 'animation' ];
     }
-	protected function _register_controls() {
+	protected function register_controls() {
 	    /*
 	    * Animated Text Content
 	    */

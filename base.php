@@ -213,6 +213,7 @@ final class RRdevs_Extension {
 		require_once( RRDEVS_WIDGET_EXTENSIONS . 'custom-css.php' );
 		require_once( RRDEVS_WIDGET_EXTENSIONS . 'custom-position.php' );
 		require_once( RRDEVS_WIDGET_EXTENSIONS . 'css-transform.php' );
+		require_once( RRDEVS_WIDGET_EXTENSIONS . 'container-control.php' );
 
 
 		//Include Widget files

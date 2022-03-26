@@ -1674,8 +1674,8 @@ TAB
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
-  width: 856px;
   border-bottom: 2px solid rgb(0 28 128 / 20%);
+  width: 100%;
   flex-wrap: wrap;
 }
 

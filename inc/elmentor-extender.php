@@ -777,7 +777,7 @@ add_action('elementor/element/social-icons/section_social_style/after_section_st
         ]
     );
  }, 10, 2);
-function rrdevs_sticky_register_controls( $element, $args )
+function rrdevs_stickyregister_controls( $element, $args )
 {
     $element->add_control(
         'rrdevs_sticky',
@@ -831,8 +831,8 @@ function rrdevs_sticky_register_controls( $element, $args )
        ]
    );
 }
-add_action('elementor/element/section/section_effects/after_section_start', 'rrdevs_sticky_register_controls' ,10, 2 );
-add_action('elementor/element/common/section_effects/after_section_start', 'rrdevs_sticky_register_controls' ,10, 2 );
+add_action('elementor/element/section/section_effects/after_section_start', 'rrdevs_stickyregister_controls' ,10, 2 );
+add_action('elementor/element/common/section_effects/after_section_start', 'rrdevs_stickyregister_controls' ,10, 2 );
 add_action('elementor/element/before_section_end', function ($element, $section_id, $args) {
     /** @var \Elementor\Element_Base $element */
     if ('section_shape_divider' === $section_id) {

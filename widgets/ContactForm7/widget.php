@@ -29,7 +29,7 @@ class RRdevs_Contact_Form extends Widget_Base {
 	public function get_keywords() {
 		return [ 'Contact_Form_7', 'Form', 'Contact'];
 	}
-	protected function _register_controls() {
+	protected function register_controls() {
         $this->start_controls_section(
             '_section_cf7',
             [

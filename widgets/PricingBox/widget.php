@@ -35,7 +35,7 @@ class RRdevs_Pricing_Box extends Widget_Base {
         return ['price', 'package', 'product', 'plan', 'finests addon' ];
     }
 
-	protected function _register_controls() {
+	protected function register_controls() {
 
 		/**
   		 * Pricing Table Feature

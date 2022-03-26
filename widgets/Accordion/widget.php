@@ -37,7 +37,7 @@ class RRdevs_Accordion extends Widget_Base {
 		return [ 'rrdevs-addons' ];
 	}
 
-	protected function _register_controls() {
+	protected function register_controls() {
 		
   		/**
   		 * Fd Addons Accordion Content Settings
